@@ -1,0 +1,142 @@
+/* inicial */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+:root {
+    /* Colors */
+    --orange: #FD841F;
+ 
+    --dark-grey: #666;
+    --light-grey: #ebebeb;
+    --green: #39b54a;
+    /* Font */
+    --font-roboto: "Roboto", sans-serif;
+    /* Font sizes */
+    --paragraph : 12px;
+    --title: 24px;
+    --prices: 18px;
+    --discounts-descriptions: 16px;
+ }
+/* clases:
+container
+card
+data
+info
+name
+price
+discount
+quotas
+dispatch
+*/
+
+.container {/* j */
+    display: flex; /* j */
+    flex-wrap: wrap; /* j */
+    /* gap: 0.5rem; */
+   /*  justify-content: space-evenly; */ /* jona */
+    justify-content: space-around;
+    /* background-color: aqua; */
+
+}
+
+.container .card{
+    width: 150px; /* jona */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); /* j */
+    height: 245px; /* jona */
+    display: flex; /* j */
+    /* justify-content: center; */
+    /* align-items: center; */
+    transition: all 0.5s ease-in-out; /* j */
+    background-color: var(--yellow);
+    position: relative;
+    border-radius: 10px;
+}
+
+.card {
+    display: flex; /* j */
+    flex-direction: column; /* j */
+    margin: 2px; 
+    padding: 2px;
+}
+
+.card .card-image {/* j */
+    height: 150px; 
+    /* background-color: orangered; */
+}
+
+.card .card-image img { /* j */
+    width: 100%; /* j *//* para que funcione  object-fit: cover;  */
+    height: 100%; /* j */  /* para que funcione  object-fit: cover;  */
+    object-fit: cover; /* j */ /* propiedad para que el elemento se acomode a su contenedor Y QUE MANTENGA SUS PROPORCIONES ORIGINALES */
+}
+
+.card .card-data{
+    /* background-color: aquamarine; */
+    margin: 1px;
+    padding: 5px;
+    border-top: solid 2px var(--orange);
+}
+
+.card .card-data .price{
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: flex-start;
+    font-size: 15px;
+  
+}
+
+.card .card-data .icon{
+    /* color: red;
+    position: absolute;
+    right: 10px;
+    top: 194px; */
+    /*  */
+    color: var(--orange);
+    border: 1px solid var(--orange);
+    background-color: white;
+    border-radius: 50%;
+    width: fit-content; /*para que ese borde encierre solo el camion*/
+    padding: 5px;
+    position: absolute; /*con esto se moveria el camion, el elemento*/
+    top: 140px;
+    right: 2px;
+    font-size: 14px;
+}
+
+.card .card-data .price .discount {
+    position: absolute; /*con esto se moveria el camion, el elemento*/
+    top: 3px;
+    right: 3px;
+    border-radius: 5px;
+    background-color: var(--orange);
+    color: white;
+    font-weight: 800;
+    font-size: 13px;
+    margin: 4px;
+    padding: 0 6px;
+}
+
+.card .card-data .name {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.card .card-data .quotes{
+    font-size: 10px;
+}
+
+
+
+
+/* medias queries arstistica */
+@media screen and (min-width: 768px) {
+
+}
+/* medias queries arstistica */
+@media screen and (min-width: 1024px) {
+
+}
